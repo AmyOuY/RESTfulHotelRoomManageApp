@@ -1,0 +1,42 @@
+<%- include("partials/header") %>;
+
+<div class="ui main text container">
+	<div class="ui huge header">
+		Room Management
+	</div>
+	<div class="ui top attached segment">
+		<div class="ui divided items">
+			<% rooms.forEach(function(room){ %>
+				<div class="item">
+					<div class="image">
+						<img src="<%= room.image %>">
+					</div>
+					<div class="content">
+						<label>Room Number:    </label>
+						<a class="header" href="/rooms/<%= room._id %>"><%= room.number %></a>
+						<div class="capacity">
+							<label>Room Capacity:    </label>
+							<span><%= room.capacity %></span>
+						</div>
+						<div class="price">
+							<label>Room Price:    </label>
+							<span><%= room.price %></span>
+						</div>
+						<div class="description">
+							<p><%- room.description.substring(0, 100) %>...</p>
+						</div>
+						<div class="extra">
+							<a class="ui floated basic violet button" href="/rooms/<%= room._id %>">
+								Read More
+								<i class="right chevron icon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			<% }); %>			
+		</div>
+	</div>
+</div>
+
+
+<%- include("partials/footer") %>;
