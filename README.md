@@ -3,14 +3,14 @@ A hotel room management app to showcase the REST API in creating Web services.
 
 
 ........GET........
-<img src="./image/index.png">
+<img src="./images/index.png">
 
 ........POST........
-<img src="./image/new.png">
+<img src="./images/new.png">
 
 ........PUT........
-<img src="./image/edit.png">
+<img src="./images/edit.png">
 
 ........DELETE........
-<img src="./image/show.png">
+<img src="./images/show.png">
 
